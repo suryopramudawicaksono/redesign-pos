@@ -76,18 +76,16 @@
                                 <ul class=" text-sm text-gray-700 dark:text-gray-200">
                                     <li>
                                         <a href="#" data-modal-target="ganti-cabang" data-modal-toggle="ganti-cabang"
-                                            class="block px-4 py-2 rounded-t-lg hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Ganti
-                                            Cabang</a>
+                                            class="block px-4 py-2 rounded-t-lg hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile</a>
                                     </li>
                                     <li>
                                         <a href="#" data-modal-target="ganti-password"
                                             data-modal-toggle="ganti-password"
-                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Ubah
-                                            Password</a>
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
                                     </li>
                                 </ul>
                                 <div>
-                                    <a href="#"
+                                    <a href="{{ route('login') }}"
                                         class="block px-4 py-2 rounded-b-lg text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
                                         Out</a>
                                 </div>
