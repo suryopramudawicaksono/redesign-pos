@@ -1,16 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
 @import "tailwindcss";
-@import "flowbite/src/themes/default";
 
-@plugin "flowbite/plugin";
+@import "tailwindcss";
+
+/* Preline UI */
+@import "../../node_modules/preline/variants.css";
+@source "../../node_modules/preline/dist/*.js";
+
+/* Plugins */
+/* @plugin "@tailwindcss/forms"; */
+
+/* Preline Themes */
+@import "../../node_modules/preline/css/themes/theme.css";
 
 @source "../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php";
 @source "../../storage/framework/views/*.php";
 @source "../**/*.blade.php";
 @source "../**/*.js";
 @source "../**/*.vue";
-@source "../../node_modules/flowbite";
 
 /* Dark mode */
 @custom-variant dark (&:where(.dark, .dark *));

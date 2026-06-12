@@ -7,27 +7,30 @@
     <title>{{ $title ?? 'POS App' }}</title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia(
+            '(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
+    </script>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-50 transition-all duration-300 lg:hs-overlay-layout-open:ps-65 dark:bg-neutral-900">
 
-    <div class="flex min-h-screen">
+    <!-- Page Content -->
+    <main id="content">
+        @include('includes.navbar')
+        @include('includes.sidebar')
 
-        <!-- Content -->
-        <div class="flex-1">
 
-            <!-- Navbar -->
-            @include('includes.navbar')
+        @yield('content')
+    </main>
 
-            <!-- Page Content -->
-            <main class="p-6">
-                @yield('content')
-            </main>
-
-        </div>
-
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <script src="./node_modules/preline/dist/preline.js"></script>
 </body>
 
 </html>
