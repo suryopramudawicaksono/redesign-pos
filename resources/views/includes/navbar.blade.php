@@ -24,7 +24,7 @@
                     </svg>
                 </li>
                 <li class="text-sm font-semibold text-foreground truncate" aria-current="page">
-                    Dashboard
+                    @yield('title')
                 </li>
             </ol>
         </div>

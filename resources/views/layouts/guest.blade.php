@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $title ?? 'POS App' }}</title>
+    <title>{{ $title ?? 'Solo POS' }}</title>
+    <link rel="shortcut icon" href="{{ asset('images/P.svg') }}" type="image/svg">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 

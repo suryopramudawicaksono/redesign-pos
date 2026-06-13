@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $title ?? 'POS App' }}</title>
+    <title>@yield('title') - {{ config('Solo POS') }}</title>
+    <link rel="shortcut icon" href="{{ asset('images/P.svg') }}" type="image/svg">
+
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -30,7 +32,6 @@
         @yield('content')
     </main>
 
-    <script src="./node_modules/preline/dist/preline.js"></script>
 </body>
 
 </html>

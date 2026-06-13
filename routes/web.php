@@ -9,10 +9,12 @@ Route::get('/', function () {
 Route::view('/login', 'auth.login')->name('login');
 Route::view('/register', 'auth.register')->name('register');
 
-Route::get('/home', function () {
-    return view('pages.home');
-})->name('home');
+Route::get('/dashboard', function () {
+    return view('pages.dashboard');
+})->name('dashboard');
 
 Route::post('/login', function () {
-    return redirect()->route('home');
+    return redirect()->route('dashboard');
 });
+
+Route::view('/perusahaan', 'pages.perusahaan')->name('perusahaan');
