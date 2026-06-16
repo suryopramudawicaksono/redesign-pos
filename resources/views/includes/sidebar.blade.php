@@ -87,20 +87,20 @@
                             role="region" aria-labelledby="account-accordion">
                             <ul class="ps-8 pt-1 space-y-1">
                                 <li>
-                                    <a class="{{ request()->routeIs('perusahaan') ? 'font-semibold' : '' }} flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
                                         href="{{ route('perusahaan') }}">
                                         Perusahaan
                                     </a>
                                 </li>
                                 <li>
                                     <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
-                                        href="#">
+                                        href="{{ route('cabang')}}">
                                         Cabang
                                     </a>
                                 </li>
                                 <li>
                                     <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
-                                        href="#">
+                                        href="{{route('gudang')}}">
                                         Gudang
                                     </a>
                                 </li>
@@ -112,13 +112,13 @@
                                 </li>
                                 <li>
                                     <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
-                                        href="#">
+                                        href="{{route('diskon')}}">
                                         Diskon
                                     </a>
                                 </li>
                                 <li>
                                     <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
-                                        href="#">
+                                        href="{{route('pemasok')}}">
                                         Pemasok
                                     </a>
                                 </li>

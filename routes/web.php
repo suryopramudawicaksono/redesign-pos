@@ -18,3 +18,9 @@ Route::post('/login', function () {
 });
 
 Route::view('/perusahaan', 'pages.perusahaan')->name('perusahaan');
+Route::view('/cabang', 'pages.cabang')->name('cabang');
+Route::view('/gudang', 'pages.gudang')->name('gudang');
+// Route::view('/barang', 'pages.barang')->name('barang');
+Route::view('/diskon', 'pages.diskon')->name('diskon');
+Route::view('/pemasok', 'pages.pemasok')->name('pemasok');
+// Route::view('/pelanggan', 'pages.pelanggan')->name('pelanggan');

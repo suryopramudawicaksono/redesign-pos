@@ -24,7 +24,7 @@
                     </svg>
                 </li>
                 <li class="text-sm font-semibold text-foreground truncate" aria-current="page">
-                    @yield('title')
+                    @yield('subtitle')                    
                 </li>
             </ol>
         </div>

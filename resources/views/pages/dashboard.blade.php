@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Dashboard')
+@section('subtitle', 'Dashboard')
 
 @section('content')
 <!-- Data Card -->
