@@ -17,10 +17,22 @@ Route::post('/login', function () {
     return redirect()->route('dashboard');
 });
 
-Route::view('/perusahaan', 'pages.perusahaan')->name('perusahaan');
-Route::view('/cabang', 'pages.cabang')->name('cabang');
-Route::view('/gudang', 'pages.gudang')->name('gudang');
-// Route::view('/barang', 'pages.barang')->name('barang');
-Route::view('/diskon', 'pages.diskon')->name('diskon');
-Route::view('/pemasok', 'pages.pemasok')->name('pemasok');
-// Route::view('/pelanggan', 'pages.pelanggan')->name('pelanggan');
+// Master
+Route::view('/perusahaan', 'pages.master.perusahaan')->name('perusahaan');
+Route::view('/cabang', 'pages.master.cabang')->name('cabang');
+Route::view('/gudang', 'pages.master.gudang')->name('gudang');
+Route::view('/produk', 'pages.master.produk')->name('produk');
+Route::view('/produk/stock', 'pages.master.stock')->name('stock');
+Route::view('/produk/paket', 'pages.master.paket')->name('paket');
+Route::view('/produk/kategori', 'pages.master.kategori')->name('kategori');
+Route::view('/diskon', 'pages.master.diskon')->name('diskon');
+Route::view('/pemasok', 'pages.master.pemasok')->name('pemasok');
+Route::view('/customer', 'pages.master.customer')->name('customer');
+Route::view('/customer/tipe', 'pages.master.tipe')->name('tipe');
+Route::view('/customer/daftar', 'pages.master.daftar')->name('daftar');
+Route::view('/user', 'pages.master.user')->name('user');
+Route::view('/user/data', 'pages.master.data')->name('data');
+Route::view('/user/role', 'pages.master.role')->name('role');
+Route::view('/poin', 'pages.master.poin')->name('poin');
+Route::view('/invoice-pembelian', 'pages.pembelian.invoice')->name('invoice-pembelian');
+Route::view('/retur-pembelian', 'pages.pembelian.retur')->name('retur-pembelian');

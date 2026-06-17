@@ -34,7 +34,7 @@
             <nav class="hs-accordion-group p-3 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
                 <ul class="flex flex-col space-y-1">
                     <li>
-                        <a class="{{ request()->routeIs('dashboard') ? 'text-blue-600 font-semibold' : '' }} flex items-center gap-x-3.5 py-2 px-2.5 bg-sidebar-nav-active text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
+                        <a class="@active('dashboard') flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
                             href="{{ route('dashboard') }}">
                             <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -87,56 +87,56 @@
                             role="region" aria-labelledby="account-accordion">
                             <ul class="ps-8 pt-1 space-y-1">
                                 <li>
-                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
+                                    <a class="@active('perusahaan') flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
                                         href="{{ route('perusahaan') }}">
                                         Perusahaan
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
+                                    <a class="@active('cabang') flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
                                         href="{{ route('cabang')}}">
                                         Cabang
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
+                                    <a class="@active('gudang') flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
                                         href="{{route('gudang')}}">
                                         Gudang
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
-                                        href="#">
-                                        Barang
+                                    <a class="@active('produk') flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
+                                        href="{{ route('produk') }}">
+                                        Produk
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
+                                    <a class="@active('diskon') flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
                                         href="{{route('diskon')}}">
                                         Diskon
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
+                                    <a class="@active('pemasok') flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
                                         href="{{route('pemasok')}}">
                                         Pemasok
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
-                                        href="#">
-                                        Pelanggan
+                                    <a class="@active('customer') flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
+                                        href="{{route('customer')}}">
+                                        Customer
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
-                                        href="#">
+                                    <a class="@active('user') flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
+                                        href="{{route('user')}}">
                                         User
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
-                                        href="#">
+                                    <a class="@active('poin') flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
+                                        href="{{ route('poin') }}">
                                         Redeem Poin
                                     </a>
                                 </li>
@@ -176,14 +176,14 @@
                             role="region" aria-labelledby="projects-accordion">
                             <ul class="ps-8 pt-1 space-y-1">
                                 <li>
-                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
-                                        href="#">
+                                    <a class="@active('invoice-pembelian') flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
+                                        href="{{ route('invoice-pembelian') }}">
                                         Invoice Pembelian
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
-                                        href="#">
+                                    <a class="@active('retur-pembelian') flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
+                                        href="{{route('retur-pembelian')}}">
                                         Retur Pembelian
                                     </a>
                                 </li>

@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+@section('title', 'Solo POS')
 @section('subtitle', 'Dashboard')
 
 @section('content')

@@ -15,6 +15,7 @@
     },
     "dependencies": {
         "apexcharts": "^5.15.0",
+        "flatpickr": "^4.6.13",
         "preline": "^4.2.0"
     }
 }
