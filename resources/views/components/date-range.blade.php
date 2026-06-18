@@ -1,4 +1,4 @@
-<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+<div class="flex gap-3">
     <div class="space-y-2">
         <label for="af-payment-billing-contact" class="inline-block text-sm font-medium text-foreground">
             Start Date
@@ -35,11 +35,5 @@
                 </svg>
             </div>
         </div>
-    </div>
-
-    <div class="flex items-end">
-        <x-button>
-            Tampilkan
-        </x-button>
     </div>
 </div>

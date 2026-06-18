@@ -31,6 +31,12 @@
 
     </x-slot:actions>
 
+    <x-slot:sides>
+
+        <x-search/>
+        
+    </x-slot:sides>
+
     <x-slot:head>
 
         <x-table-th>No</x-table-th>

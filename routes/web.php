@@ -34,5 +34,14 @@ Route::view('/user', 'pages.master.user')->name('user');
 Route::view('/user/data', 'pages.master.data')->name('data');
 Route::view('/user/role', 'pages.master.role')->name('role');
 Route::view('/poin', 'pages.master.poin')->name('poin');
+
+// Pembelian
 Route::view('/invoice-pembelian', 'pages.pembelian.invoice')->name('invoice-pembelian');
 Route::view('/retur-pembelian', 'pages.pembelian.retur')->name('retur-pembelian');
+
+// Penjualan
+Route::view('/pos', 'pages.penjualan.pos')->name('pos');
+Route::view('/invoice-penjualan', 'pages.penjualan.invoice')->name('invoice-penjualan');
+Route::view('/retur-penjualan', 'pages.penjualan.retur')->name('retur-penjualan');
+Route::view('/history-penjualan', 'pages.penjualan.history')->name('history-penjualan');
+Route::view('/session', 'pages.penjualan.session')->name('session');

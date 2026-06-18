@@ -40,6 +40,12 @@
 
     </x-slot:actions>
 
+    <x-slot:sides>
+
+        <x-search/>
+        
+    </x-slot:sides>
+
     <x-slot:head>
 
         <x-table-th>ID</x-table-th>

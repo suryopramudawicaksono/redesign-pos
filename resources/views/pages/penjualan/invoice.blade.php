@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Pembelian')
+@section('title', 'Penjualan')
 @section('subtitle', 'Invoice')
 
 @section('content')
@@ -15,7 +15,7 @@
                 class="grid sm:grid-cols-12 gap-2 sm:gap-4 py-8 first:pt-0 last:pb-0 border-t first:border-transparent border-layer-line">
                 <div class="sm:col-span-12">
                     <h2 class="text-lg font-semibold text-foreground">
-                        Tambah Invoice Pembelian
+                        Tambah Invoice Penjualan
                     </h2>
                 </div>
                 <!-- End Col -->
@@ -90,7 +90,7 @@
 <!-- End Card Section -->
 
 <!-- Table -->
-<x-datatable title="History Invoice Pembelian">
+<x-datatable title="History Invoice Penjualan">
 
     <x-slot:actions>
 
@@ -107,11 +107,11 @@
 
     <x-slot:head>
 
-        <x-table-th>No Pembelian</x-table-th>
+        <x-table-th>No Penjualan</x-table-th>
         <x-table-th>Tanggal</x-table-th>
-        <x-table-th>Nama Pemasok</x-table-th>
+        <x-table-th>Nama Pelanggan</x-table-th>
         <x-table-th>Nama Staff</x-table-th>
-        <x-table-th>Total Item</x-table-th>
+        <x-table-th>Nama Item</x-table-th>
         <x-table-th>Total Harga</x-table-th>
         <x-table-th>Detail</x-table-th>
         <x-table-th>Terbayar</x-table-th>
