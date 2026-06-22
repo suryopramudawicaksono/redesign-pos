@@ -45,3 +45,12 @@ Route::view('/invoice-penjualan', 'pages.penjualan.invoice')->name('invoice-penj
 Route::view('/retur-penjualan', 'pages.penjualan.retur')->name('retur-penjualan');
 Route::view('/history-penjualan', 'pages.penjualan.history')->name('history-penjualan');
 Route::view('/session', 'pages.penjualan.session')->name('session');
+
+// Finance
+Route::view('/pengeluaran', 'pages.finance.pengeluaran')->name('pengeluaran');
+
+// Laporan
+Route::view('/lap-pembelian', 'pages.laporan.pembelian')->name('lap-pembelian');
+Route::view('/lap-stock', 'pages.laporan.stock')->name('lap-stock');
+Route::view('/lap-penjualan', 'pages.laporan.penjualan')->name('lap-penjualan');
+Route::view('/lap-keuangan', 'pages.laporan.keuangan')->name('lap-keuangan');
