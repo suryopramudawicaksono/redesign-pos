@@ -46,6 +46,10 @@ Route::view('/retur-penjualan', 'pages.penjualan.retur')->name('retur-penjualan'
 Route::view('/history-penjualan', 'pages.penjualan.history')->name('history-penjualan');
 Route::view('/session', 'pages.penjualan.session')->name('session');
 
+// E-commerce
+Route::view('/cart', 'pages.e-commerce.cart')->name('cart');
+Route::view('/pengiriman', 'pages.e-commerce.pengiriman')->name('pengiriman');
+
 // Finance
 Route::view('/pengeluaran', 'pages.finance.pengeluaran')->name('pengeluaran');
 

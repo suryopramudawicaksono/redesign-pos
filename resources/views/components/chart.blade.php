@@ -3,11 +3,11 @@
     'title' => null,
 ])
 
-<div class="bg-white rounded-xl shadow-xs">
+<div class="bg-layer border border-layer-line rounded-xl shadow-2xs overflow-hidden">
     
     @if($title)
-        <div class="px-5 py-4 border-b border-slate-200">
-            <h3 class="font-semibold text-slate-800">
+        <div class="px-5 py-4 border-b border-layer-line">
+            <h3 class="font-semibold text-slate-800 dark:text-white">
                 {{ $title }}
             </h3>
         </div>

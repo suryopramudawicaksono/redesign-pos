@@ -28,7 +28,7 @@ $colors = [
 ];
 @endphp
 
-<div class="overflow-hidden rounded-xl border-slate-200 bg-white shadow-xs">
+<div class="overflow-hidden rounded-xl bg-layer border border-layer-line shadow-xs">
     <div class="p-4">
         <div class="flex items-center gap-4">
 
@@ -37,7 +37,7 @@ $colors = [
             </div>
 
             <div class="min-w-0">
-                <p class="text-sm text-slate-500">
+                <p class="text-sm text-slate-500 dark:text-gray-200">
                     {{ $title }}
                 </p>
 
