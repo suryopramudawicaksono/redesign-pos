@@ -33,3 +33,4 @@ jobs:
         run: |
           echo "${{ secrets.SUDO_PASSWORD }}" | ssh -o StrictHostKeyChecking=no -p 22023 tip@112.78.32.33 'cd /var/www/html/redesign-pos && sudo -S git pull origin main'
 
+#
