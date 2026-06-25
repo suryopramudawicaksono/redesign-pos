@@ -1,0 +1,35 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Add server to known_hosts
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -p 22023 112.78.32.33 >> ~/.ssh/known_hosts
+          # Tampilkan isi known_hosts untuk verifikasi
+          cat ~/.ssh/known_hosts
+
+      - name: Test SSH Connection
+        run: |
+          ssh -o StrictHostKeyChecking=no -p 22023 tip@112.78.32.33 'echo "SSH Connection Successful"'
+
+      - name: Deploy to Server
+        run: |
+          echo "${{ secrets.SUDO_PASSWORD }}" | ssh -o StrictHostKeyChecking=no -p 22023 tip@112.78.32.33 'cd /var/www/html/redesign-pos && sudo -S git pull origin main'
+#tess
