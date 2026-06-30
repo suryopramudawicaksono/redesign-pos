@@ -69,7 +69,7 @@
     <!-- End Grid -->
 
     <!-- Apex Line Chart -->
-    <div id="hs-pro-anvpch" class="min-h-80"></div>
+    <div id="chart" class="min-h-80"></div>
 </div>
 <!-- End Negative Value Chart in Card -->
 
@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     new ApexCharts(
-        document.querySelector('#hs-pro-anvpch'),
+        document.querySelector('#chart'),
         options
     ).render();
 });

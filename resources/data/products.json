@@ -1,0 +1,82 @@
+[
+    {
+        "image": "https://picsum.photos/150/150?random=1",
+        "name": "Laptop",
+        "price": 15000000,
+        "sku": "SKU001",
+        "unit": "Pcs",
+        "stock": "9999"
+    },
+    {
+        "image": "https://picsum.photos/150/150?random=2",
+        "name": "Smartphone",
+        "price": 8000000,
+        "sku": "SKU002",
+        "unit": "Pcs",
+        "stock": "9999"
+    },
+    {
+        "image": "https://picsum.photos/150/150?random=3",
+        "name": "Smartwatch",
+        "price": 2500000,
+        "sku": "SKU003",
+        "unit": "Pcs",
+        "stock": "9999"
+    },
+    {
+        "image": "https://picsum.photos/150/150?random=4",
+        "name": "Wireless Earbuds",
+        "price": 1200000,
+        "sku": "SKU004",
+        "unit": "Pcs",
+        "stock": "9999"
+    },
+    {
+        "image": "https://picsum.photos/150/150?random=5",
+        "name": "Gaming Monitor",
+        "price": 4500000,
+        "sku": "SKU005",
+        "unit": "Pcs",
+        "stock": "9999"
+    },
+    {
+        "image": "https://picsum.photos/150/150?random=6",
+        "name": "Gaming Mouse",
+        "price": 700000,
+        "sku": "SKU006",
+        "unit": "Pcs",
+        "stock": "9999"
+    },
+    {
+        "image": "https://picsum.photos/150/150?random=7",
+        "name": "Mechanical Keyboard",
+        "price": 1500000,
+        "sku": "SKU007",
+        "unit": "Pcs",
+        "stock": "9999"
+    },
+    {
+        "image": "https://picsum.photos/150/150?random=8",
+        "name": "Tablet",
+        "price": 6000000,
+        "sku": "SKU008",
+        "unit": "Pcs",
+        "stock": "9999"
+    },
+    {
+        "image": "https://picsum.photos/150/150?random=9",
+        "name": "Noise Cancelling Headphones",
+        "price": 3000000,
+        "sku": "SKU009",
+        "unit": "Pcs",
+        "stock": "9999"
+    },
+    {
+        "image": "https://picsum.photos/150/150?random=10",
+        "name": "Bluetooth Speaker",
+        "price": 2000000,
+        "sku": "SKU010",
+        "unit": "Pcs",
+        "stock": "9999"
+    }
+]
